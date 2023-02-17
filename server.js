@@ -46,6 +46,8 @@ app.post("/", function (req, res) {
   });
 });
 
+app.get("/search")
+
 app.get("*", function (req, res) {
   res.sendFile(path.join(__dirname, "/oh-um-front/build/index.html"));
 });
